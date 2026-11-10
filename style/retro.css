@@ -1,12 +1,10 @@
-
-
 pre,
 code {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
 
 pre {
-  padding: .5rem;
+  padding:.5rem;
   line-height: 1.25;
   overflow-x: scroll;
 }
@@ -23,7 +21,7 @@ pre {
 
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   a[href]:after {
@@ -73,13 +71,14 @@ pre {
 
 a,
 a:visited {
-  color: #01ff70;
+  color: #ffb000;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #2ecc40;
+  color: #fafafa; /* #2ecc40; */
 }
 
 .retro-no-decoration {
@@ -199,4 +198,43 @@ pre {
 blockquote {
   border-left: 3px solid #01ff70;
   padding-left: 1rem;
+}
+
+.horizontal-menu {
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+nav {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 3rem;
+}
+
+.voce {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.voce img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.testo p {
+    font-size: 0.9rem;
+}
+
+.attiva {
+    color: #fff !important;
+    border-bottom: 2px solid #fff;
 }
