@@ -1,3 +1,9 @@
+/* generiche */
+
+* {
+    outline: 1px solid red;
+}
+
 pre,
 code {
   font-family: Menlo, Monaco, "Courier New", monospace;
@@ -14,7 +20,6 @@ a:visited {
   color: #ffb000;
   text-decoration: none;
 }
-
 a:hover,
 a:focus,
 a:active {
@@ -33,29 +38,12 @@ body {
   line-height: 1.85;
 }
 
-.backgroud-index {
-  background-image: url('../images/index-background.avif');
-  margin: 0;
-  width: 100vw;
-  max-width: none;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 p,
 .retro-p {
   font-size: 1rem;
   margin-bottom: 1.3rem;
 }
 
-h1,
-.retro-h1,
-h2,
-.retro-h2,
-h3,
-.retro-h3,
 h4,
 .retro-h4 {
   margin: 1.414rem 0 .5rem;
@@ -63,43 +51,15 @@ h4,
   line-height: 1.42;
 }
 
-h1,
-.retro-h1 {
-  margin-top: 0;
-  font-size: 3.998rem;
-}
-
-h2,
-.retro-h2 {
-  font-size: 2.827rem;
-}
-
-h3,
-.retro-h3 {
-  font-size: 1.999rem;
-}
-
 h4,
 .retro-h4 {
   font-size: 1.414rem;
-}
-
-h5,
-.retro-h5 {
-  font-size: 1.121rem;
-}
-
-h6,
-.retro-h6 {
-  font-size: .88rem;
 }
 
 small,
 .retro-small {
   font-size: .707em;
 }
-
-/* https://github.com/mrmrs/fluidity */
 
 img,
 canvas,
@@ -139,25 +99,31 @@ blockquote {
   padding-left: 1rem;
 }
 
-.horizontal-menu {
-  display: flex;
-  list-style: none;
-  flex-wrap: nowrap;
-  padding: 0;
+/* indice */
+
+.backgroud-index {
+  background-image: url('../images/index-background.avif');
   margin: 0;
-  gap: 10px;
-}
-
-nav {
   width: 100vw;
-  margin-left: calc(50% - 50vw);
-  text-align: center;
-  white-space: nowrap;
-  margin-bottom: 3rem;
-  margin-top: 0rem;
+  max-width: none;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.voce {
+.backgroud-index a {
+  color: #1E3A5F;
+}
+
+.backgroud-index a:hover {
+    color: #ffb000;
+}
+
+/* copertina */
+
+.voce-copertina
+ {
     display: flex;
     width: 100%;
     gap: 2rem;
@@ -166,25 +132,44 @@ nav {
     margin: 1.5rem;
 }
 
-.voce h4 {
-  margin-top: 0;
-  padding-bottom: 2rem;
+.nav-copertina {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
-.voce img {
-    width: 140px;
-    height: 140px;
+.voce-copertina img {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     max-width: none;
     object-fit: cover;
     flex-shrink: 0;
 }
 
-.testo p {
-    font-size: 0.9rem;
+.voce-copertina h4 {
+  color: white;
+  margin-top: 0;
+  padding-bottom: 1rem;
 }
+
+.voce-copertina h4:hover {
+  color: orange;
+}
+
+.testo-copertina {
+    font-size: 0.9rem;
+    color: white
+}
+
+
+/*
 
 .attiva {
     color: #fff;
     border-bottom: 2px solid #fff;
 }
+*/
